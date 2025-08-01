@@ -989,6 +989,13 @@ button.btn-primary:hover {
     background: #faa82f;
 }
 
+@media (max-width: 767.98px) {
+  .mt-sm-only {
+    margin-top: 10px !important;
+    display: inline-block; /* Needed for margin to work on span */
+  }
+}
+
 a.arrow-button {
     font-size: 12px;
 
