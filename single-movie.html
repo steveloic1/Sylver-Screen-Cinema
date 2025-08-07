@@ -4,8 +4,8 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Movie Star - Cinema HTML Template</title>
-		<link rel="icon" type="image/png" href="images/favicon.png" />
+		<title>Sylver Screen Cinéma - Plongez dans l’émotion, vivez le cinéma.</title>
+		<link rel="icon" type="image/png" href="images/fav-logo.jpg" />
 		<link href="css/slick.css" rel="stylesheet">
 		<link href="css/bootstrap.min.css" rel="stylesheet">
 		<link href="css/venobox.css" rel="stylesheet">
@@ -26,20 +26,36 @@
 		<div class="wrapper">
 
 			<!-- Navigation -->
+			<!-- Navigation -->
 			<div class="navbar" role="navigation">
 				<!-- Heading -->
 				<div class="heading">
 					<div class="container">
 						<div class="row">
 							<div class="col-sm-12">
-								<div class="search">
-									<a href="#">
-										<i class="material-icons">search</i>
+								<!-- 🔍 Search Icon -->
+  								<div class="search">
+    								<a href="javascript:void(0);">
+      									<i class="material-icons">search</i>
+    								</a>
+  								</div>
+
+  								<!-- 🔍 Modal -->
+  								<div class="search-modal" id="searchModal">
+    								<div class="search-modal-content">
+      									<span class="close-modal" id="closeModal">&times;</span>
+      									<input type="text" placeholder="Effectuer votre recherche">
+    								</div>
+  								</div>
+
+								<!-- <div class="tel">
+									<a href="tel:+237699267044">
+										<i class="material-icons">call</i>699 26 70 44
 									</a>
-								</div>
+								</div> -->
 								<div class="tel">
-									<a href="tel:0330 123 4567">
-										<i class="material-icons">phone in talk</i> 0330  123 4567
+									<a href="#">
+										<i class="material-icons">person</i>
 									</a>
 								</div>
 							</div>
@@ -49,8 +65,8 @@
 
 				<div class="container">
 					<div class="navbar-header">
-						<a href="index.html" class="logo" title="Movie star landing page">
-							<img src="images/logo.svg" alt="Movie star HTML Template">
+						<a href="index.html" class="logo" title="">
+							<img src="images/logo-sc.png" alt="Sylver Screen Cinéma">
 						</a>
 						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
 							<span class="sr-only">Toggle navigation</span>
@@ -58,29 +74,27 @@
 							<span class="icon-bar middle-bar"></span>
 							<span class="icon-bar bottom-bar"></span>
 						</button>
-					</div>  
+					</div>
 					<div class="navbar-collapse collapse">
 						<ul id="menu-primary" class="nav navbar-nav">
 							<li>
-									<a href="index.html">Home</a>
+									<a href="index.html">Accueil</a>
 							</li>
-							<li class="active">
-								<a href="whats-on.html">What's on</a>
+							<li>
+								<a href="#">A Venir</a>
 							</li>
-							<li class="dropdown">
-								<a href="comng-soon.html">Coming soon</a>
-								<ul class="dropdown-menu">
-									<li><a href="#">Dropdown item 1</a></li>
-									<li><a href="#">Dropdown item 2</a></li>
-									<li><a href="#">Dropdown item 3</a></li>
-								</ul>
+							<li>
+								<a href="whats-on.html">Films</a>
+							</li>
+							<!-- <li>
+								<a href="shortcodes.html">Shortcodes</a>
 							</li>
 							<li class="dropdown">
 								<a href="news.html">News</a>
 								<ul class="dropdown-menu">
 									<li><a href="news-single.html">News single</a></li>
 								</ul>
-							</li>
+							</li> -->
 							<li>
 								<a href="contact.html">Contact</a>
 							</li>
@@ -90,7 +104,7 @@
 			</div>
 
 			<!-- Hero -->
-			<div id="content_hero" style="background-image: url(http://via.placeholder.com/1440x435)">
+			<div id="content_hero" style="background-image: url(https://www.screentune.com/wp-content/uploads/2025/08/Critique-Dracula-2025-FB_ScreenTune.jpg)">
 				
 				<img src="images/scroll-arrow.svg" alt="Scroll down" class="scroll" />
 
@@ -98,24 +112,17 @@
 				<div class="container">
 					<div class="row blurb scrollme animateme" data-when="exit" data-from="0" data-to="1" data-opacity="0" data-translatey="100">
 						<div class="col-md-9">
-							<span class="title">Action, Adventure, Sci-Fi</span>
-							<h1>Transformers: The Last Knight</h1>
-							<p>Humans and Transformers are at war, Optimus Prime is gone. The key to saving our future lies buried in the secrets of the past, in the hidden history of Transformers on Earth.</p>
+							<span class="title">Drame, Fantastique, Epouvante-horreur</span>
+							<h1>Dracula</h1>
+							<p>Au XVe siècle, le Prince Vladimir renie Dieu après la perte brutale et cruelle de son épouse. Il hérite alors d’une malédiction : la vie éternelle.</p>
 							<div class="buttons">
-								<span class="certificate">
-									PG
+								<span class="certificate" style="line-height: 2.5rem!important;">
+									12
 								</span>
-								<a href="https://youtu.be/ScMzIvxBSi4" data-vbtype="video" class="venobox btn btn-default">
+								<a href="https://www.youtube.com/watch?v=2e90rXzkFUs" data-vbtype="video" class="venobox btn btn-default">
 									<i class="material-icons">play_arrow</i>
-									<span>Play trailer</span>
+									<span>Bande Annonce</span>
 								</a>
-								<div class="star-rating">
-									<i class="material-icons">star_rate</i>
-									<i class="material-icons">star_rate</i>
-									<i class="material-icons">star_rate</i>
-									<i class="material-icons">star_rate</i>
-									<i class="material-icons">star_rate</i>
-								</div>
 							</div>
 						</div>
 					</div>
@@ -124,13 +131,13 @@
 			</div>
 
 			<!-- Section -->
-			<div class="container section single-movie">
+			<div class="container section single-movie" style="padding-bottom: 40px;">
 				<div class="row">
 					<div class="col-sm-7">
 						<h2>Synopsis</h2>
 						<div class="row">
 							<div class="col-sm-5">
-								<img src="http://via.placeholder.com/265x340" alt="Transformers: The Last Knight" class="poster">
+								<img src="https://media.pathe.sn/movie/alex/HO00000799/poster/md/1/movie&uuid=46D8E021-4D29-464C-8F9A-07E31C215D4A" alt="Dracula" class="poster">
 								<div class="share">
 									<a href="#">
 										<i class="fa fa-facebook"></i>
@@ -147,289 +154,73 @@
 								</div>
 							</div>
 							<div class="col-sm-7">
-								<h3 class="no-underline">The plot</h3>
-								<p>Humans and Transformers are at war, Optimus Prime is gone. The key to saving our future lies buried in the secrets of the past, in the hidden history of Transformers on Earth.</p>
-
-								<p>Optimus Prime finds his home planet, Cybertron, now a dead planet, in which he comes to find he was responsible for killing. He finds a way to bring the planet back to life, but in order to do so, he needs to find an artifact, which is on Earth.</p>
+								<h3 class="no-underline">Dracula</h3>
+								<p>
+Au XVe siècle, le Prince Vladimir renie Dieu après la perte brutale et cruelle de son épouse. Il hérite alors d’une malédiction : la vie éternelle. Il devient Dracula. Condamné à errer à travers les siècles, il n’aura plus qu’un seul espoir : celui de retrouver son amour perdu.</p>
 
 								<ul class="movie-info">
-									<li><i>Director</i> Michael Bay</li>
-									<li><i>Starring</i> Mark Wahlberg, Anthony Hopkins</li>
-									<li><i>Release date</i> 23 June 2017</li>
-									<li><i>Running time</i> 114 mins</li>
+									<li><i>Interdit</i> - 12 ans</li>
+									<li><i>Réalisé par</i> Luc Besson</li>
+									<li><i>Avec</i> Caleb Jones, Christoph Waltz, Zoe Bleu</li>
+									<li><i>Sortie</i> 01 août 2025</li>
+									<li><i>Temps</i> 2h 09min</li>
 								</ul>
 							</div>
 						</div>
 					</div>
 					<div class="col-sm-4 col-sm-push-1">
-						<h2>Viewing times</h2>
+						<h2>Horaiares</h2>
 						<ul class="show-times">
-							<li><i>Monday</i> <span class="time past">13:00</span> <span class="time">16:00</span> <span class="time">19:30</span> <span class="time">22:00</span></li>
-							<li><i>Tuesday</i> <span class="time past">13:00</span> <span class="time">15:30</span> <span class="time">19:30</span> <span class="time">22:00</span></li>
-							<li class="today"><i>Today</i> <span class="time past">12:00</span> <span class="time">16:00</span> <span class="time">19:30</span> <span class="time">22:00</span></li>
-							<li><i>Thursday</i> <span class="time past">13:00</span> <span class="time">16:00</span> <span class="time">20:15</span> <span class="time">22:00</span></li>
-							<li><i>Friday</i> <span class="time past">13:00</span> <span class="time">14:45</span> <span class="time">19:30</span> <span class="time">22:00</span></li>
-							<li><i>Saturday</i> <span class="time past">14:15</span> <span class="time">16:00</span> <span class="time">19:30</span> <span class="time">22:00</span></li>
-							<li><i>Sunday</i> <span class="time past">13:00</span> <span class="time">16:00</span> <span class="time">19:30</span> <span class="time">22:20</span></li>
+  							<li><i>Samedi</i><a href="#"><span class="time">17:00</span></a></li>
+							<li><i>Lundi</i> <a href="#"><span class="time">19:30 VOST</span></a></li>
+  							<li><i>Jeudi</i> <a href="#"><span class="time">19:30</span></a></li>
 						</ul>
+
 					</div>
 				</div>
 			</div>
 
-			<section class="dark">
-				<div class="container section remove-bottom-padding">
-					<div class="row comingSoon-slides singleGallery">
-						<div class="col-sm-12">
-
-							<div class="row single-slide slideOne">
-								<div class="bg" style="background: url(http://via.placeholder.com/1440x775);"></div>
-								<div class="col-sm-12 slide-video">
-									<a href="https://youtu.be/ScMzIvxBSi4" data-vbtype="video" class="venobox video">
-										<i class="material-icons">play_arrow</i>
-										<img src="http://via.placeholder.com/1440x550" alt="" />
-									</a>
-								</div>
-							</div>
-
-							<div class="row single-slide slideTwo">
-								<div class="bg" style="background: url(http://via.placeholder.com/1440x775);"></div>
-								<div class="col-sm-12 slide-video">
-									<a href="https://youtu.be/ScMzIvxBSi4" data-vbtype="video" class="venobox video">
-										<i class="material-icons">play_arrow</i>
-										<img src="http://via.placeholder.com/1440x550" alt="" />
-									</a>
-								</div>
-							</div>
-
-							<div class="row single-slide slideThree">
-								<div class="bg" style="background: url(http://via.placeholder.com/1440x775);"></div>
-								<div class="col-sm-12 slide-video">
-									<a href="https://youtu.be/ScMzIvxBSi4" data-vbtype="video" class="venobox video">
-										<i class="material-icons">play_arrow</i>
-										<img src="http://via.placeholder.com/1440x550" alt="" />
-									</a>
-								</div>
-							</div>
-
-							<div class="row single-slide slideFour">
-								<div class="bg" style="background: url(http://via.placeholder.com/1440x775);"></div>
-								<div class="col-sm-12 slide-video">
-									<a href="https://youtu.be/ScMzIvxBSi4" data-vbtype="video" class="venobox video">
-										<i class="material-icons">play_arrow</i>
-										<img src="http://via.placeholder.com/1440x550" alt="" />
-									</a>
-								</div>
-							</div>
-
-							<div class="row single-slide slideFive">
-								<div class="bg" style="background: url(http://via.placeholder.com/1440x775);"></div>
-								<div class="col-sm-12 slide-video">
-									<a href="https://youtu.be/ScMzIvxBSi4" data-vbtype="video" class="venobox video">
-										<i class="material-icons">play_arrow</i>
-										<img src="http://via.placeholder.com/1440x550" alt="" />
-									</a>
-								</div>
-							</div>
-
-							<div class="row single-slide slideSix">
-								<div class="bg" style="background: url(http://via.placeholder.com/1440x775);"></div>
-								<div class="col-sm-12 slide-video">
-									<a href="https://youtu.be/ScMzIvxBSi4" data-vbtype="video" class="venobox video">
-										<i class="material-icons">play_arrow</i>
-										<img src="http://via.placeholder.com/1440x550" alt="" />
-									</a>
-								</div>
-							</div>
-
-							<div class="row single-slide slideSeven">
-								<div class="bg" style="background: url(http://via.placeholder.com/1440x775);"></div>
-								<div class="col-sm-12 slide-video">
-									<a href="https://youtu.be/ScMzIvxBSi4" data-vbtype="video" class="venobox video">
-										<i class="material-icons">play_arrow</i>
-										<img src="http://via.placeholder.com/1440x550" alt="" />
-									</a>
-								</div>
-							</div>
-
-							<div class="slick-carousel gallery" id="comingSoon">
-								<div data-dynamicclass="slideOne">
-									<a href="#">
-										<img src="http://via.placeholder.com/165x165" alt="" />
-									</a>
-								</div>
-								<div data-dynamicclass="slideTwo">
-									<a href="#">
-										<img src="http://via.placeholder.com/165x165" alt="" />
-									</a>
-								</div>
-								<div data-dynamicclass="slideThree">
-									<a href="#">
-										<img src="http://via.placeholder.com/165x165" alt="" />
-									</a>
-								</div>
-								<div data-dynamicclass="slideFour">
-									<a href="#">
-										<img src="http://via.placeholder.com/165x165" alt="" />
-									</a>
-								</div>
-								<div data-dynamicclass="slideFive">
-									<a href="#">
-										<img src="http://via.placeholder.com/165x165" alt="" />
-									</a>
-								</div>
-								<div data-dynamicclass="slideSix">
-									<a href="#">
-										<img src="http://via.placeholder.com/165x165" alt="" />
-									</a>
-								</div>
-								<div data-dynamicclass="slideSeven">
-									<a href="#">
-										<img src="http://via.placeholder.com/165x165" alt="" />
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<!-- Section -->
-			<div class="container section single-movie">
-				<div class="row">
-					<div class="col-sm-7">
-						<h2>Comments</h2>
-						<div class="comments">
-							<div class="row">
-								<div class="col-sm-2">
-									<img src="images/avatar.png" class="Luke Barrett" />
-								</div>
-								<div class="col-sm-9">
-									<span class="date">February 2, at 2:34pm</span>
-									<h4 class="no-underline">Luke Barrett</h4>
-									<p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima.</p>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-sm-2">
-									<img src="images/avatar.png" class="Keith Cox" />
-								</div>
-								<div class="col-sm-9">
-									<span class="date">February 2, at 2:34pm</span>
-									<h4 class="no-underline">Keith Cox</h4>
-									<p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima.</p>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-sm-2">
-									<img src="images/avatar.png" class="Gabriel Norris" />
-								</div>
-								<div class="col-sm-9">
-									<span class="date">February 2, at 2:34pm</span>
-									<h4 class="no-underline">Gabriel Norris</h4>
-									<p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima.</p>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-sm-2">
-									<img src="images/avatar.png" class="Luke Barrett" />
-								</div>
-								<div class="col-sm-9">
-									<span class="date">February 2, at 2:34pm</span>
-									<h4 class="no-underline">Luke Barrett</h4>
-									<p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima.</p>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-sm-2">
-									<img src="images/avatar.png" class="Gabriel Norris" />
-								</div>
-								<div class="col-sm-9">
-									<span class="date">February 2, at 2:34pm</span>
-									<h4 class="no-underline">Gabriel Norris</h4>
-									<p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima.</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-4 col-sm-push-1">
-						<h2>Leave a comment</h2>
-						<form>
-							<div class="form-group">
-								<label>Name *</label>
-								<input type="text" />
-							</div>
-							<div class="form-group">
-								<label>Email *</label>
-								<input type="email" />
-							</div>
-							<div class="form-group">
-								<label>Website</label>
-								<input type="text" />
-							</div>
-							<div class="form-group">
-								<label>Comments *</label>
-								<textarea rows="5"></textarea>
-							</div>
-							<div class="form-group right-align">
-								<button class="btn btn-ghost">Post comment</button>
-							</div>
-						</form>
-					</div>
-				</div>
-			</div>
-
-			<!-- Section -->
-			<div class="section small-padding border-top">
-				<div class="container">
-					<div class="row">
-						<div class="col-sm-12 cta">
-							<p>Need help? Contact our support team on</p>
-							<p class="gradient-text">0330 123 4567</p>
-						</div>
-					</div>
-				</div>
-			</div>
 
 			<!-- Footer -->
 			<footer>
 				<div class="container">
 					<div class="row">
 						<div class="col-sm-3">
-							<h6>Get in touch</h6>
+							<h6>A L'affiche</h6>
 							<ul>
+								<li><a href="#">Superman</a></li>
+								<li><a href="#">Les Bad Guys 2</a></li>
+								<li><a href="#">Substitution - Bring her back</a></li>
+								<li><a href="#">Les 4 Fantastiques, premiers pas</a></li>
+							</ul>
+						</div>
+						<div class="col-sm-3">
+							<h6>A PROPOS</h6>
+							<ul>
+								<li><a href="whats-on.html">Films</a></li>
+								<li><a href="contact.html">Contact</a></li>
 								<li><a href="#">FAQs</a></li>
-								<li><a href="#">Give us feedback</a></li>
-								<li><a href="#">Contact us</a></li>
 							</ul>
 						</div>
 						<div class="col-sm-3">
-							<h6>About Movie star</h6>
+							<h6>Liens Utiles</h6>
 							<ul>
-								<li><a href="#">About us</a></li>
-								<li><a href="#">Find us</a></li>
-								<li><a href="#">Schedule</a></li>
-								<li><a href="#">News</a></li>
+								<li><a href="#">Centre d'aide</a></li>
+								<li><a href="#">Conditions générales</a></li>
+								<li><a href="#">Politique de confidentialité</a></li>
 							</ul>
 						</div>
 						<div class="col-sm-3">
-							<h6>Legal stuff</h6>
+							<h6>Rejoignez-nous</h6>
 							<ul>
-								<li><a href="#">Terms &amp; Conditions</a></li>
-								<li><a href="#">Privacy policy</a></li>
-								<li><a href="#">Cookie policy</a></li>
-							</ul>
-						</div>
-						<div class="col-sm-3">
-							<h6>Connect with us</h6>
-							<ul>
-								<li><a href="#"><i class="fa fa-facebook"></i> Facebook</a></li>
-								<li><a href="#"><i class="fa fa-twitter"></i> Twitter</a></li>
-								<li><a href="#"><i class="fa fa-google-plus"></i> Google +</a></li>
+								<li><a href="https://www.facebook.com/profile.php?id=61578307271836&_rdc=1&_rdr#" target="_blank"><i class="fa fa-facebook"></i> Facebook</a></li>
+								<li><a href="https://www.instagram.com/sylverscreencinema/?igsh=MThmaDQza2R0NDI3cw%3D%3D#" target="_blank"><i class="fa fa-instagram"></i> Instagram</a></li>
+								<li><a href="https://wa.me/237699267044" target="_blank"><i class="fa fa-whatsapp"></i> Whatsapp</a></li>
 							</ul>
 						</div>
 					</div>
 					<div class="copyright">
-						<p>2017 &copy; Movie Star  /  <a href="http://www.klevermedia.co.uk">Web design by Klever media</a></p>
+						<p>© 2025 Sylver Screen Cinéma. Tous droits réservés.</p>
 					</div>
 				</div>
 			</footer>
@@ -446,5 +237,27 @@
 		<script src="js/venobox.min.js"></script>
 		<script src="https://use.fontawesome.com/4dfd2d448a.js"></script>
 		<script src="js/custom.js"></script>
+		<script src="js/date.js"></script>
+		<!-- ✅ Working JS -->
+  <script>
+    const search = document.querySelector('.search');
+    const modal = document.getElementById('searchModal');
+    const close = document.getElementById('closeModal');
+
+    search.addEventListener('click', () => {
+      modal.style.display = 'flex';
+    });
+
+    close.addEventListener('click', () => {
+      modal.style.display = 'none';
+    });
+
+    // Optional: close modal when clicking outside content
+    window.addEventListener('click', (e) => {
+      if (e.target === modal) {
+        modal.style.display = 'none';
+      }
+    });
+  </script>
 	</body>
 </html>
